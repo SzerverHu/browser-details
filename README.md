@@ -1,5 +1,6 @@
 # browser-details
-PHP script for detecting Your IP Address / Hostname, Browser/Computer Properties and Browser Headers. (works with PHP 4, PHP 5, PHP 7, PHP 8)
+PHP script for detecting Your IP Address / Hostname, Browser/Computer Properties and Browser Headers.
+(works with PHP 4, PHP 5, PHP 7, PHP 8)
 
 # Note
 Attempts to determine the capabilities of the user's browser, by looking up the browser's information in the browscap.ini file.
