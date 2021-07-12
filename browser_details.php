@@ -1,5 +1,5 @@
 <?php
-$browser = $_SERVER["HTTP_USER_AGENT"];
+$Browser = $_SERVER["HTTP_USER_AGENT"];
 $remote_addr = $_SERVER["REMOTE_ADDR"];
 $remote_host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 $http_connection = $_SERVER["HTTP_CONNECTION"];
@@ -9,32 +9,33 @@ $http_encoding = $_SERVER["HTTP_ACCEPT_ENCODING"];
 $http_language = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
 $brow = get_browser(null, true);
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <style type="text/css">
-font, td, p, a { font-family: Verdana, Arial; font-size:8pt; }
+font, table, tr, td, p, a { font-family: Verdana, Arial; font-size:9pt; }
 </style>
 </head>
 <body>
-<table border="0" cellpadding="3" style="border-collapse: collapse" width="100%">
+<table border="0" cellpadding="3" style="table-layout:fixed; border-collapse:collapse; width:100%">
 	<tr>
-		<td bgcolor="#315A9D" height="19" colspan="2"><font color="#FFFFFF"><b>Your IP 
+		<td bgcolor="#315A9D" colspan="2"><font color="#FFFFFF"><b>Your IP 
 		Address / Hostname</b></font></td>
 	</tr>
 	<tr>
-		<td height="19">Your IP Address:</td>
-		<td align="right" height="19"><?php echo $remote_addr; ?></td>
+		<td style="width:25%">Your IP Address:</td>
+		<td style="width:75%" align="right"><b><?php echo $remote_addr; ?></b></td>
 	</tr>
 	<tr>
-		<td bgcolor="#EFEFEF" height="19">Your Hostname:</td>
-		<td align="right" height="19" bgcolor="#EFEFEF"><?php echo $remote_host; ?></td>
+		<td bgcolor="#EFEFEF">Your Hostname:</td>
+		<td align="right" bgcolor="#EFEFEF"><?php echo $remote_host; ?></td>
 	</tr>
 	<tr>
-		<td height="19">&nbsp;</td>
-		<td align="right" height="19">&nbsp;</td>
+		<td >&nbsp;</td>
+		<td align="right">&nbsp;</td>
 	</tr>
 	<tr>
-		<td bgcolor="#315A9D" height="19" colspan="2"><font color="#FFFFFF"><b>Browser/Computer Properties</b></font></td>
+		<td bgcolor="#315A9D" colspan="2"><font color="#FFFFFF"><b>Browser/Computer Properties</b></font></td>
 	</tr>
 
 	<tr>
@@ -47,7 +48,7 @@ font, td, p, a { font-family: Verdana, Arial; font-size:8pt; }
 	</tr>
 	<tr>
 		<td>Browser (User-Agent): </td>
-		<td align="right"><?php echo $browser; ?></td>
+		<td align="right"><?php echo $Browser; ?></td>
 	</tr>
 	<tr>
 		<td bgcolor="#EFEFEF">Time and Date: </td>
