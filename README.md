@@ -4,4 +4,5 @@ Attempts to determine the capabilities of the user's browser, by looking up the 
 
 Note:
 In order for this to work, your browscap configuration setting in php.ini must point to the correct location of the browscap.ini file on your system.
-Browscap.ini is not bundled with PHP, but you may find an up-to-date file on http://browscap.org/. 
+Browscap.ini is not bundled with PHP, but you may find an up-to-date file on http://browscap.org/. (Choose the php_browscap.ini file: this is a special version of browscap.ini for PHP users only!)
+
