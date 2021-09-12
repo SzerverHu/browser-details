@@ -1,4 +1,4 @@
-# Browser-details
+# <a href="https://github.com/SzerverHu/browser-details/">Browser-details</a>
 PHP script for detecting Your IP Address / Hostname, Browser/Computer Properties and Browser Headers.
 
 (Works with PHP 4, PHP 5, PHP 7, PHP 8)
